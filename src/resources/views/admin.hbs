@@ -1,0 +1,47 @@
+<form>
+    <div class="mb-3">
+        <label for="inputProductName" class="form-label">Product name</label>
+        <input type="text" class="form-control" id="inputProductName">
+    </div>
+    <div class="mb-3">
+        <label for="inputCategory" class="form-label">Category</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Choose category</option>
+            <option value="1">Coffee</option>
+            <option value="2">Tea</option>
+            <option value="3">Cake</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="inputSize" class="form-label">Size</label>
+        <input class="form-control" list="sizeListOptions" id="inputSize" placeholder="Choose product size">
+        <datalist id="sizeListOptions">
+            <option value="8 Oz">
+            <option value="10 Oz">
+            <option value="12 Oz">
+        </datalist>
+    </div>
+    <div class="mb-3">
+        <label for="inputQuantity" class="form-label">Quantity</label>
+        <input type="text" class="form-control" id="inputQuantity">
+    </div>
+    <div class="mb-3">
+        <label for="inputPrice" class="form-label">Price</label>
+        <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" id="inputPrice">
+        </div>        
+    </div>
+    <div class="mb-3">
+        <label for="loadImage" class="form-label">Upload image</label>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="loadImage">
+        </div>      
+    </div>
+    <div class="mb-3">
+        <label for="inputDescription" class="form-label">Description</label>
+        <textarea class="form-control" id="inputDescription" rows="3"></textarea>
+    </div>    
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
